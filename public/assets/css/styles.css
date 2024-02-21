@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.025em !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    color: white;
+}
+
+.posts {
+    min-height: fit-content;
+}
+
+.section,
+.posts,
+.landing {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+
+.section {
+    min-height: 90vh;
+}
+
+.other-posts {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.posts {
+    padding: 20px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.text-orange {
+    color: #fd7e14;
+}
+
+.bg-orange {
+    background-color: #fd7e14;
+}
+
+h1,
+.fs-1 {
+    font-size: 50px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+h2,
+.fs-2 {
+    font-size: 40px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+h3,
+.fs-3 {
+    font-size: 30px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+h4,
+.fs-4 {
+    font-size: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-100-width {
+    width: 100%;
+}
+
+.hyperlink {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #ffc107;
+    transition: color 0.2s ease;
+    margin-right: 20px !important;
+}
+
+.nav-link:hover {
+    color: #dc3545;
+}
+
+.subtext {
+    font-size: 10px;
+    color: #d8a407;
+}
+
+.my-card {
+    width: 100%;
+    height: 160px;
+    padding: 20px 40px 20px 20px !important;
+    box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+}
+
+.post-card {
+    width: 100%;
+    padding: 20px 40px 20px 20px !important;
+    box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+}
+
+.box-shadow {
+    box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.3);
+}
+
+.card-overflow {
+    overflow: hidden;
+    height: 110px;
+}
+
+a.btn {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #212529;
+    font-weight: bold;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #383e42;
+}
+
+.btn-shadow {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.delete-blog {
+    padding: 3px 8px;
+    background-color: #0a01ab;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-top-right-radius: 6px;
+}
+
+.post-anchor {
+    text-decoration: none;
+}
+
+.comment-box {
+    display: none;
+}
+
+.comment-box.active {
+    display: contents;
+}
+
+.brand {
+    margin-right: 50px !important;
+}
+
+.mw-bio {
+    max-width: 768px;
+}
+
+.comment-display {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .mw-768 {
+        width: 75%;
+    }
+
+    .reveal {
+        position: unset;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .disappear {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .mw-768 {
+        width: 50%;
+    }
+
+    .comment-display {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .posts {
+        min-height: initial !important;
+    }
+
+    .mw-768 {
+        width: 35%;
+    }
+
+    .form-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mw-768 {
+        width: 25%;
+    }
+}
